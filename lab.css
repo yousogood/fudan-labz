@@ -1,0 +1,130 @@
+.navbarfont {
+    font-size: 40px;
+    font-family: STXingkai;
+    font-style: normal;
+    transition: font-size 0.4s;
+    -webkit-transition: font-size 0.4s;
+}
+
+.navbar {
+    background-color: white;
+    height: 16vh;
+}
+
+a>div:hover {
+    color: #515152;
+    font-style: italic;
+    text-decoration: underline;
+    transition: color 0.5s;
+}
+
+a>div {
+    color: #011619;
+}
+
+.image:hover {
+    transition: all 0.2s;
+    transform: scale(1.03);
+}
+
+button {
+    background-color: rgb(217, 217, 207);
+    color: white;
+    border: white 1px;
+}
+
+.picshow {
+    object-fit: contain;
+    max-height: 440px;
+}
+
+.picdiv {
+    height: 440px;
+}
+
+.labtitle {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-family: STXingkai;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-family: STSong;
+    font-weight: bold;
+    padding: 0%;
+}
+
+.licontent {
+    font-size: 1.0rem;
+    font-family: STSong;
+    font-weight: bold;
+}
+
+.group-title {
+    font-size: xx-large;
+    font-family: KaiTi;
+    font-weight: bolder;
+}
+
+.group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.group-item {
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    width: 25vw;
+    border: 3px;
+    border-style: groove;
+}
+
+body.has-navbar-fixed-top,
+html.has-navbar-fixed-top {
+    padding-top: 3.25rem
+}
+
+.navbar {
+    background: 0 0
+}
+
+.container {
+    flex-grow: 1;
+    flex-shrink: 1
+}
+
+.intro {
+    font-family: KaiTi;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#preload {
+    background-image: url("/img/honor/0.jpg");
+    background-image: url("/img/honor/1.jpg");
+    background-image: url("/img/honor/2.jpg");
+    background-image: url("/img/honor/3.jpg");
+    background-image: url("/img/honor/4.jpg");
+    background-image: url("/img/honor/5.jpg");
+    background-image: url("/img/honor/6.jpg");
+    background-image: url("/img/honor/7.jpg");
+}
+.honor{
+    font-family: KaiTi;
+    text-align: center;
+}
+.leftright{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.kaiti{
+    font-family: KaiTi;
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="has-navbar-fixed-top">
+
+<head class="has-navbar-fixed-top">
+    <meta charset="UTF-8">
+    <title>密码实验室</title>
+    <link rel="stylesheet" href="/bulma.css" />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="/lab.css">
+    <script src="/lab.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body class="has-navbar-fixed-top">
+    <!--Start Navigation-->
+    <nav class="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
+        <div class="container" onscroll="scroll">
+            <div class="navbar-brand" style=" display: contents;">
+                <a class="navbar-item" href="index.html">
+                    <img height="100px" style="max-height: 5.0rem" src="img/logo.png" />
+                </a>
+                <div class="labtitle">国家保密实验室</div>
+                <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="navbar-menu" id="navbarExampleTransparentExample">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html">
+                        <div class="navbarfont">主页</div>
+                    </a>
+                    <a class="navbar-item" href="group.html">
+                        <div class="navbarfont">成员</div>
+                    </a>
+                    <a class="navbar-item active" href="research.html">
+                        <div class="navbarfont">研究</div>
+                    </a>
+                    <a class="navbar-item" href="contact.html">
+                        <div class="navbarfont">联系</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--End   Navigation-->
+    <br>
+
+    <br>
+    <!--Start Main body-->
+    <section class="section">
+        <div class="container kaiti">
+
+            <!--start dataset-->
+            <div class="columns ">
+                <div class="column is-12">
+                    <div class="box">
+                        <div style="text-align: center;" class="box">
+                            <p class="title is-8" style="margin-bottom: 0.1rem;">密码理论与技术</p>
+                            <p class="title is-4">密码数学理论基础，公钥密码、对称密码、密码协议、后量子密码。</p>
+                        </div>
+                        <!--                         
+                        <div>
+                            <figure class="image">
+                                <img alt="Research" />
+                            </figure>
+                        </div> -->
+                        <div class="block has-text-justified box">
+                            复旦有较强的数学学科，是密码理论与技术的基石，曾先后培养了蔡吉人、林永年、黄民强密码学院士，为国家和国防密码机要工作做成卓越贡献。当前，在公钥密码、密码协议、后量子密码、军事密码领域形成了较为鲜明的研究特色和优势。学科交叉与融合性强，理论密切联系实际，对接国家和国防重大战略需求。
+                        </div>
+                        <div style="text-align: center;">
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--end dataset-->
+
+            <!--start dataset-->
+            <div class="columns">
+                <div class="column is-12">
+                    <div class="box " style="background-color:rgb(243, 241, 241);">
+                        <div style="text-align: center;" class="box" style="background-color: azure;">
+                            <p class="title is-8" style="margin-bottom: 0.1rem;" style="background-color: azure;">密码应用
+                            </p>
+                            <p class="title is-4">金融科技安全、多媒体安全、数据安全、网络安全、区块链、人工智能安全。</p>
+                        </div>
+                        <!-- <div>
+                            <figure class="image">
+                                <img alt="Research" />
+                            </figure>
+                        </div> -->
+                        <div class="block has-text-justified box">
+                            涵盖主要的密码应用领域，有较成体系的科研教学团队、密码应用面向国民经济主战场，服务上海金融和科创中心建设。
+                        </div>
+                        <div style="text-align: center;">
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--end dataset-->
+
+            <!--start dataset-->
+            <div class="columns">
+                <div class="column is-12">
+                    <div class="box is-black">
+                        <div style="text-align: center;" class="box">
+                            <p class="title is-8" style="margin-bottom: 0.1rem;">密码芯片与工程</p>
+                            <p class="title is-4">密码硬件实现（FPGA、GPU、RISC-V）、密码芯片设计与系统实现、密码工程。</p>
+                        </div>
+                        <!-- <div>
+                                        <figure class="image">
+                                            <img alt="Research" />
+                                        </figure>
+                                    </div> -->
+                        <div class="block has-text-justified box">
+                            复旦微电子学院和复旦微电子上市公司有专业的密码芯片教学、科研、和产业研发人员，复旦微电子上市公司有专门的密码芯片生产线和专业的侧信道安全实验室，在密码芯片与系统领域具有产学研优势。
+                        </div>
+                        <div style="text-align: center;">
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--end dataset-->
+            <div class="honor_board "></div>
+            <script>
+                class Honor {
+                    constructor(inserter) {
+                        this.$inserter = $(inserter)
+                    }
+                    append(title, time, discription, members, members_intros, backcolor) {
+                        let template =
+                            `
+                            <div class = "honor box leftright " style="background-color:${backcolor}">
+                                <div class ="honor_title box leftright"> ${title}</div>  
+                                <div class ="honor_time box leftright">${time}</div>
+                                <div class="columns box leftright"> 
+                        `
+                        let len = members.length
+                        for (let i = 0; i < len; i++) {
+                            template += `
+                                <div class="column ">${members[i]}</div>
+                                
+                            `
+                        }
+                        template += `</div><br><div class="columns box leftright">`
+                        for (let i = 0; i < len; i++) {
+                            template += `
+                            <div class="column ">${members_intros[i]}</div> 
+                            `
+                        }
+                        template += `
+                            </div>
+                            <div class="box leftright">${discription}</div>
+                            </div>
+                        `
+                        console.log(template)
+                        this.$inserter.append(template)
+                    }
+                }
+                board = new Honor(".honor_board",)
+                board.append("第六届全国密码技术竞赛特等奖",
+                    "2021年11月",
+                    "提出了一套基于MLWE的后量子密钥封装算法的协议设计与实现上的成\
+                    体系优化方案，包含参数优化、多项式乘法优化、解密方式优化、AVX2实现\
+                    优化、软硬件协同实现优化以及FPGA硬件实现优化，全方面提升了方案效率。",
+                    ["郑婕妤", "赵一凡", "沈诗羽"],
+                    ["硕士（全日制/202109/网络空间安全）", "博士（全日制/202109/集成电路与系统设计）",
+                        "硕博连读（全日/201909/网络空间安全）"], "rgb(243, 241, 241)"
+                )
+
+                board.append("第六届全国密码技术竞赛二等奖",
+                    "2021年11月",
+                    "该作品基于格设计了无认证的密钥交换协议Aigis-ke、单向认证\
+                    的密钥交换协议Aigis-uake、双向认证的密钥交换算法Aigis-ake，并在高\
+                    性能Intel AVX2平台和嵌入式低功耗ARM Cortex-M4平台进行了高效实现。",
+                    ["刘羽", "梁志闯", "何峰", "金正中"],
+                    ["硕士（全日制/202109/网络空间安全）", "博士（全日制/202109/网络空间安全）",
+                        "硕士（全日制/202009/网络空间安全））", "本科（全日制/201209/网络空间安全）"],
+                    "white"
+                )
+                board.append("ACNS2019最佳学生论文奖",
+                    "2019",
+                    "该论文提出了一种可以模块化构造后量子密码方案的密钥共识机制。",
+                    ["金正中"],
+                    ["本科（全日制/201209/网络空间安全）"], "rgb(243, 241, 241)"
+                )
+                board.append("第五届全国密码技术竞赛一等奖",
+                    "2019",
+                    "利用D4编码设计了基于RLWE的后量子密钥封装算法，并优化实现。",
+                    ["沈诗羽"],
+                    ["硕博连读（全日/201909/网络空间安全）"],
+                    "white"
+                )
+
+            </script>
+
+
+        </div>
+    </section>
+    <!--End   Main body-->
+
+
+</body>
+
+</html>

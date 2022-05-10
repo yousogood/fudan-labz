@@ -1,49 +1,346 @@
 <!DOCTYPE html>
-<html>
-    <title>实验室主页</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./lib/bootstrap-4.6.0/css/bootstrap.min.css">
-    <script src="./lib/jquery/jquery-3.5.1.slim.min.js"></script>
-    <script src="./lib/bootstrap-4.6.0/js/bootstrap.min.js"></script>
-    <body>
-        <form role="form">
-            <div class="form-group">
-                <label for="name">名称</label>
-                <input type="text" class="form-control" id="name" 
-                       placeholder="请输入名称">
+<html lang="zh-CN" class="has-navbar-fixed-top">
+
+<head class="has-navbar-fixed-top">
+    <meta charset="UTF-8">
+    <title>密码实验室</title>
+    <link rel="stylesheet" href="/bulma.css" />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="/lab.css">
+    <script src="/lab.js"></script>
+    <meta id="#preload">
+</head>
+
+<body class="has-navbar-fixed-top">
+    <!--Start Navigation-->
+    <nav class="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand" style=" display: contents;">
+                <a class="navbar-item" href="index.html">
+                    <img height="100px" style="max-height: 5.0rem" src="img/logo.png" />
+                </a>
+                <div class="labtitle">国家保密实验室</div>
+                <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="inputfile">文件输入</label>
-                <input type="file" id="inputfile">
-                <p class="help-block">这里是块级帮助文本的实例。</p>
+            <div class="navbar-menu" id="navbarExampleTransparentExample">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html">
+                        <div class="navbarfont">主页</div>
+                    </a>
+                    <a class="navbar-item" href="group.html">
+                        <div class="navbarfont">成员</div>
+                    </a>
+                    <a class="navbar-item active" href="research.html">
+                        <div class="navbarfont">研究</div>
+                    </a>
+                    <a class="navbar-item" href="contact.html">
+                        <div class="navbarfont">联系</div>
+                    </a>
+                </div>
             </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox"> 请打勾
-                </label>
+        </div>
+    </nav>
+    <!--End   Navigation-->
+    <br>
+
+    <!--Start Main body-->
+    <section class="section">
+        <div class="container">
+
+            <!-- <p class="title is-4" style="margin-top: -5px; font-size: 2.0rem;font-family: Arial;"> -->
+            <!-- <div style="margin-top: -5px; font-size: 1.8rem;">
+                        学科背景及意义
+                    </div> -->
+
+            <div style="margin-bottom: 35px;"></div>
+
+
+
+            <div class="columns is-desktop">
+
+                <div class="column content is-6 has-text-justified">
+                    <p class="intro">
+                        密码是关系国家根本利益的战略资源，是网络空间安全的核心技术。国家领导人指出，密码工作是
+                        “我们党和国家的命门、命脉”，并将密码技术与核技术、航空航天技术并列为国家安全的三大战略科技。《中华人民共和国密码法》已于 2020 年 1 月 1
+                        日正式实施。伴随密码法的出台和施行，密码技术作为网络空间安全的核心技术和基础支撑必将发挥更大作用，密码事业在百年未有之大变局中必将迎来重大历史发展机遇。
+                        <br>
+                    <p class="intro">
+                        密码学实验室目前有全职科研人员 5
+                        人，实验室研究方向为：后量子密码、区块链、密码协议、面向新应用新业态（5G、智能群组、物联网、云计算）的新型密码技术及应用、密码工程及芯片、量子计算。实验室长期和国内外密码领域学者有密切的合作，比如国内的清华大学图灵奖姚期智院士团队、美国哥伦比亚大学的
+                        Moti Yung 教授等。实验室多位同学去约翰-霍普金斯大学、康奈尔大学、普渡大学、新加坡国立大学等深造或交流。
+                    </p>
+                </div>
+
+
+                <div class=" column is-6" style="margin: 8px;">
+                    <button id="prev">prev</button>
+                    <button id="next">next</button>
+                    <div class="picdiv">
+                        <img class="picshow" src="/img/honor/4.jpg" />
+                    </div>
+                </div>
+
             </div>
-            <button type="submit" class="btn btn-default">提交</button>
-        </form>
-        <table class="table">
-            <caption>基本的表格布局</caption>
-           <thead>
-              <tr>
-                 <th>名称</th>
-                 <th>城市</th>
-              </tr>
-           </thead>
-           <tbody>
-              <tr>
-                 <td>Tanmay</td>
-                 <td>Bangalore</td>
-              </tr>
-              <tr>
-                 <td>Sachin</td>
-                 <td>Mumbai</td>
-              </tr>
-           </tbody>
-        </table>
-    </body>
-  
+
+
+            <div>
+                <div class="subtitle">
+                    学科背景及意义
+                </div>
+                <ul>
+                    <li>
+                        <div class="licontent">
+                            密码是关系党和国家根本利益的战略资源，是网络空间安全的核心技术和基础支撑,是国之重器
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="licontent">
+                            <span style="color:red;">机要密码是我们党和国家的命门、命脉</span>,与核武器、航空航天并列为3项国家安全战略科技
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="licontent">
+                            2020年1月国家密码法实施
+                        </div>
+                    </li>
+                    <li>
+                        <div class="licontent">
+                            2020年2月， <span style="color:red">“建设世界一流密码强国”</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="licontent">
+                            2021年，教育部将密码专业列入学科专业目录
+                        </div>
+                    </li>
+                    <li>
+                        <div class="licontent">
+                            图灵奖被授予5次
+                        </div>
+                    </li>
+                </ul>
+                <br>
+                <div class="subtitle">
+                    专业特色
+                </div>
+
+                <ul>
+                    <li>
+                        <div class="licontent">
+                            密码专业已发展成为计算机、通信、数学、微电子等相结合的新兴交叉学科。
+                        </div>
+                    </li>
+                    <li>
+                        <div class="licontent">
+                            随着云计算、大数据、人工智能、区块链等新应用新业态的出现，以及智慧城市、物联网、车链网、隐私保护等新需求的迸发，社会各界对密码技术、密码产品、密码应用与服务的需求呈现快速增长态势。
+                        </div>
+                    </li>
+                    <li>
+                        <div class="licontent">
+                            2020年国家人力资源部将密码作为一个单列的工种，2021年教育部将密码专硕单独列入目录。据2021年的人力资源分析报告，<span
+                                style="color: red;">密码技术人才是就业和薪资最好的学科方向之一。</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="licontent">
+                            市场对密码技术和工程人才需求强劲。但目前我国密码从业人员普遍专业性不足、知识深度不够、系统性不强，高端技术和管理人才的匮乏已成为制约密码合规、正确、有效应用的瓶颈。
+
+                        </div>
+                    </li>
+                </ul>
+                <br>
+                <div class="subtitle">
+                    研究方向
+                </div>
+                <ul>
+                    <li>
+                        <div class="licontent">
+                            密码理论与技术：密码数学基础、密码算法协议设计分析、量子计算
+                        </div>
+                    </li>
+                    <li>
+                        <div class="licontent">
+                            密码应用：密码在金融科技安全、大数据安全、多媒体安全、人工智能安全、系统安全、区块链中的应用
+                        </div>
+                    </li>
+                    <li>
+                        <div class="licontent">
+                            密码芯片与工程：密码芯片设计与实现、密码软硬件优化实现、侧信道分析防护
+                        </div>
+                    </li>
+                </ul>
+                <br>
+                <ul>
+                    <div class="subtitle">
+                        本科生培养
+                    </div>
+
+                    <li>
+                        <div class="licontent">
+                            实验室优秀本科生来自计算机学院、软件学院、数学学院、微电子学院，交叉融合性强
+                        </div>
+                    </li>
+                    <li>
+                        <div class="licontent">
+                            大多数本科生在本科阶段做出了优秀的科研成果，并发表高质量学术论文
+                        </div>
+                    </li>
+
+                    <div class="licontent">
+                        注重精英培养，宁缺勿滥
+                    </div>
+                </ul>
+                <br>
+                <div class="subtitle">
+                    部分毕业生去向
+                </div>
+
+                <ul>
+                    <div class="licontent">
+                        教育学术
+                        <li>
+                            <div>
+                                国外名校：MIT、约翰霍普金斯、宾夕法尼亚、康奈尔、普渡
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                国内高校：广东农大计算机学院院长
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+                <div class="licontent">
+                    金融科技
+                    <ul>
+                        <li>
+                            <div>
+                                摩根史丹利、建信金科
+                            </div>
+                        </li>
+                </div>
+                </ul>
+
+                <div class="licontent">
+                    头部企业
+                    <ul>
+                        <li>
+                            <div>
+                                微软美国总部、IBM、高通、华为、蚂蚁金服、B站…
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="licontent">
+                    党政军机构
+                    <ul>
+                        <li>
+                            <div>
+                                公务员、选调生、军职
+                            </div>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- <div class="licontent">
+                    -加强密码专业人才培养，系统性地培养并输出具备密码学扎实理论基础和应用工程能力的专业型人才，助力实现我国网络安全和网络强国的战略目标。
+
+                </div> -->
+
+
+            <!-- <div class="licontent">
+                    -复旦具有悠久的密码传统，曾先后培养出蔡吉人、林永年、柴洪峰、黄民强等院士，为党和国家做出卓越贡献，融入复旦百年红色基因。
+                 
+                </div> -->
+
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container">
+            <p class="title is-4 " style="margin-top: -20px; font-size: 1.6rem;font-family: KaiTi;">代表性成果及奖励</p>
+            <div class="column  has-text-justified" style="max-height: 400px; overflow: auto;font-family: KaiTi;">
+                <!-- 12/2021, <b>3 papers</b> accepted by <b>ICLR22</b>. <b>2 papers</b> accepted by <b>SDM22</b>. One paper accepted by <b>IJCV</b> and <b>TPAMI</b>.<br> -->
+                <b>近五年获得的代表性科研奖励</b><br>
+                科研奖励 二等奖 军队科技进步奖 赵运磊 2018<br>
+                科研奖励 三等奖 党政机要密码科学技术进步奖 赵运磊 2017<br>
+                科研奖励 国际学术奖 ACNS2019最佳学生论文奖 赵运磊 2019<br>
+                科研奖励 国家特等奖 第六届全国密码技术竞赛优秀指导教师奖 赵运磊 2021<br>
+                科研奖励 国家二等奖 第六届全国密码技术竞赛优秀指导教师奖 赵运磊 2021<br>
+                科研奖励 二等奖 全国密码算法设计竞赛（AKCN算法） 赵运磊,程蕾晓, 金正中,巩博儒, 吴洪祥,隋光烨 张振峰 2020<br>
+                科研奖励 三等奖 全国密码算法设计竞赛（OKCN算法） 赵运磊,程蕾晓, 金正中,巩博儒, 吴洪祥,隋光烨 2020<br>
+                科研奖励 三等奖 全国密码算法设计竞赛（木兰算法） 赵运磊,巩博儒, 程蕾晓,文黎明, 谢群松,陈如钢, 任思溟,吴洪祥 2020<br>
+                <br>
+
+                <b>近五年在校生代表性成果</b><br>
+                第六届全国密码技术竞赛特等奖 202111 郑婕妤 硕士（全日制/202109/网络空间安全）<br>
+
+                第六届全国密码技术竞赛特等奖 202111 赵一凡 博士（全日制/202109/集成电路与系统设计）<br>
+
+                第六届全国密码技术竞赛特等奖 202111 沈诗羽 硕博连读（全日/201909/网络空间安全）<br>
+
+                第六届全国密码技术竞赛二等奖 202111 刘羽 硕士（全日制/202109/网络空间安全）<br>
+
+                第六届全国密码技术竞赛二等奖 202111 梁志闯 博士（全日制/202109/网络空间安全）<br>
+
+                第六届全国密码技术竞赛二等奖 202111 何峰 硕士（全日制/202009/网络空间安全）<br>
+
+                <br>
+                <p style="font-family:'Times New Roman', Times, serif">
+                    <b>代表性论著</b><br>
+
+                    (1)<a href="/pdf/1.pdf" target="_blank"> Andrew C. Yao; Moti Yung; Yunlei Zhao ; Concurrent
+                        Knowledge Extraction
+                        in Public-Key Models,
+                        Journal of Cryptology , 2016, 29(1): 156-219 ( 期刊论文)</a><br>
+                    (2)<a href="/pdf/2.pdf" target="_blank"> Yunlei Zhao ; Identity-Concealed Authenticated Encryption
+                        and Key
+                        Exchange, ACMCCS 2016 ,奥地利,
+                        2016-8-1至2016-8-3 ( 会议论文)</a><br>
+                    (3)<a href="/pdf/3.pdf" target="_blank"> 沈诗羽; 何峰; 赵运磊 ; Aigis密钥封装算法多平台高效实现与优化, 计算机研究与发展 , 2021,
+                        58(10): 2238-2252
+                        ( 期刊论文)</a><br>
+                    (4)<a href="/pdf/4.pdf" target="_blank"> Yunlei Zhao ; Identity-based authenticated encryption with
+                        identity
+                        confidentiality, 25th
+                        European
+                        Symposium on Research in Computer Security, ESORICS 2020 , Guildford, United kingdom,
+                        2020-9-14至2020-9-18 ( 会议论文)</a><br>
+                    (5)<a href="/pdf/5.pdf" target="_blank"> Zhengzhong Jin; Yunlei Zhao ; Generic and practical key
+                        establishment
+                        from lattice, 17th
+                        International Conference on Applied Cryptography and Network Security, ACNS 2019 , Bogota,
+                        Colombia,
+                        2019-6-5至2019-6-7 (会议论文)</a><br>
+                    (6)<a href="/pdf/6.pdf" target="_blank"> Privacy-Preserving_Aggregation-Authentication_Scheme_for_Safety_Warning_System_in_Fog-Cloud_Based_VANET</a><br>
+                    (7)<a href="/pdf/7.pdf" target="_blank"> AP-PRE_Autonomous_Path_Proxy_Re-Encryption_and_Its_Applications</a><br>
+                    (8)<a href="/pdf/8.pdf" target="_blank"> Compact_and_Flexible_KEM_from_Ideal_Lattice</a><br>
+                    (9)<a href="/pdf/9.pdf" target="_blank"> Identity-Concealed Authenticated Encryption</a><br>
+                    (10)<a href="/pdf/10.pdf" target="_blank"> Half-Aggregation of Schnorr Signatures</a><br>
+                    (11)<a href="/pdf/11.pdf" target="_blank"> Order-Revealing Encryption_File-Injection Attack and Forward</a><br>
+                    (12)<a href="/pdf/12.pdf" target="_blank"> AKCN-MLWE 算法 AVX2 高效实现</a><br>
+
+                        
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--End   Main body-->
+
+
+</body>
+
 </html>

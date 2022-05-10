@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="has-navbar-fixed-top">
+
+<head class="has-navbar-fixed-top">
+    <meta charset="UTF-8">
+    <title>密码实验室</title>
+    <link rel="stylesheet" href="/bulma.css" />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="/lab.css">
+    <script src="/lab.js"></script>
+
+</head>
+
+<body class="has-navbar-fixed-top">
+    <!--Start Navigation-->
+    <nav class="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
+        <div class="container" onscroll="scroll">
+            <div class="navbar-brand" style=" display: contents;">
+                <a class="navbar-item" href="index.html">
+                    <img height="100px" style="max-height: 5.0rem" src="img/logo.png" />
+                </a>
+                <div class="labtitle">国家保密实验室</div>
+                <div class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarExampleTransparentExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="navbar-menu " id="navbarExampleTransparentExample">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html">
+                        <div class="navbarfont">主页</div>
+                    </a>
+                    <a class="navbar-item" href="group.html">
+                        <div class="navbarfont">成员</div>
+                    </a>
+                    <a class="navbar-item active" href="research.html">
+                        <div class="navbarfont">研究</div>
+                    </a>
+                    <a class="navbar-item" href="contact.html">
+                        <div class="navbarfont">联系</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--End   Navigation-->
+    <br>
+
+
+
+    <!--Start Main body-->
+    <section class="section">
+        <div class="container">
+            <p class="title is-4" style="margin-top: -20px; font-size: 1.6rem;font-family: Arial;">实验室负责人</p>
+            <div class="columns">
+                <div class="column">
+                    <article class="columns is-desktop">
+                        <div class="column is-6" style="width: 20%;">
+                            <figure>
+                                <img src="./img/ylzhao.jpg" alt="professor" />
+                            </figure>
+                        </div>
+
+                        <!-- <div class="column"> -->
+                        <div style="margin-top: 20px;">
+                            <div>
+                                <p><b style="color:black">赵运磊</b></p>
+                                <!-- <p>Ph.D. Student</p> -->
+                                <p><b>
+                                        复旦大学特聘教授、国家级重要人才称号获得者，国家重点研发计划项目首席科学家。多项成果作为标准已大规模实际部署应用</a>
+                                    </b>
+                                </p>
+                                <!-- <p style=" color:red;">Fellow of IEEE, OSA, SPIE, IAPR</p> -->
+
+                                <p>
+                                    <b>
+                                        科技部专家<br>
+                                        信息保障国家重点实验室学术委员会委员<br>
+                                        教育部中学生英才计划导师<br>
+
+                                        中国密码学会理事<br>
+                                        《密码学报》编委<br>
+                                        中共上海市委密码领导小组专家成员<br>
+                                    </b>
+                                </p>
+                                <p><b>联系方式：ylzhao@fudan.edu.cn</b></p>
+                                <!-- <p>COE Dean’s Fellowship</p> -->
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+            <br>
+
+            <p class="group-title">
+                博士生
+            </p>
+            <div class="group-doctor group">
+                <!--first student-->
+            </div>
+            <p class="group-title group">
+                硕士生
+            </p>
+
+            <div class="group-master group">
+                <!--first student-->
+            </div>
+            <script>
+                class Board {
+
+                    constructor(inserter, stuType) {
+                        this.$title = ``;
+                        this.memcnt = 0;
+                        this.$Members = "";
+                        $(inserter).append(this.$title);
+                        this.$inserter = inserter;
+                    }
+                    appendMember(name, pic, year, aticle, email, marjor) {
+                        let tmpMember = ` 
+                    <!--first student-->
+                    <div class="group-item">
+                        <p><b style="color:black" >${name}</b></p>
+                        <p>${marjor}</p>
+                        <p>${year}</p>
+                        <p>${email}</p>
+
+                    </div>`
+                        $(this.$inserter).append(tmpMember);
+                    }
+
+                }
+                board = new Board(".group-doctor");
+                board.appendMember("隋光烨", "/img/member/doctor/SuiGuangye.png", "", "", "", "密码学工程与应用，密码协议安全性分析");
+                board.appendMember("赵旭阳", "/img/logo.png", "", "none", "", "密码算法硬件高效实现");
+                board.appendMember("胡跃", "/img/logo.png", "", "none", "", "密码算法硬件高效实现");
+                board.appendMember("梁志闯", "/img/logo.png", "", "none", "", "网络空间安全");
+                board.appendMember("刘召曼", "/img/logo.png", "", "none", "", "网络空间安全");
+                board.appendMember("廉欢欢", "/img/logo.png", "", "none", "", "网络空间安全");
+                board.appendMember("杨亚芳", "/img/logo.png", "", "none", "", "信息安全与密码学");
+
+                board.appendMember("沈诗羽", "/img/logo.png", "", "none", "", "网络空间安全");
+
+
+
+                board = new Board(".group-master");
+                board.appendMember("王紫茵", "/img/logo.jpg", "", "none", "", "");
+                board.appendMember("沈星雨", "/img/logo.jpg", "", "none", "", "");
+                board.appendMember("刘羽", "/img/logo.jpg", "", "none", "", "");
+                board.appendMember("郝世迪", "/img/logo.jpg", "", "none", "", "");
+                board.appendMember("耿合详", "/img/logo.jpg", "", "none", "", "密码工程");
+                board.appendMember("魏涵", "/img/logo.jpg", "", "none", "", "后量子密码与区块链");
+                board.appendMember("刘意", "/img/logo.jpg", "", "none", "", "密码工程");
+                board.appendMember("刘裕雄", "/img/logo.jpg", "", "none", "", "密码工程");
+                board.appendMember("何峰", "/img/logo.jpg", "", "none", "", "");
+                board.appendMember("张宏", "/img/logo.jpg", "", "none", "", "");
+                board.appendMember("史朋飞", "/img/logo.jpg", "", "none", "", "");
+                board.appendMember("朱哲", "/img/logo.jpg", "", "none", "", "");
+                board.appendMember("周佳霖", "/img/logo.jpg", "", "none", "", "");
+                board.appendMember("韩啸林", "/img/logo.jpg", "", "none", "", "");
+                board.appendMember("薛晨曦", "/img/logo.jpg", "", "none", "", "");
+                board.appendMember("黄磊磊", "/img/logo.jpg", "", "none", "", "");
+                board.appendMember("王威", "/img/logo.jpg", "", "none", "", "");
+                board.appendMember("王御天", "/img/logo.jpg", "", "none", "", "");
+                board.appendMember("李欣然", "/img/logo.jpg", "", "none", "", "");
+                board.appendMember("方博越", "/img/logo.jpg", "", "none", "", "");
+
+
+            </script>
+
+
+
+
+
+        </div>
+    </section>
+    <!--End   Main body-->
+
+</body>
+
+</html>
