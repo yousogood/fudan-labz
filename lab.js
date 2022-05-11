@@ -1,4 +1,4 @@
-var picid = 4;
+var picid = 3;
 const picnum = 8;
 
 $(document).ready(function () {
@@ -39,21 +39,22 @@ $(document).ready(function () {
         }
     })
 
-    $("#prev").click(function () {
+
+    $(document).ready(function () {
+
+        $("#prev").click(function () {
         picid = (picid - 1 + 8) % picnum;
-        $(".picshow").attr("src", "/img/honor/" + String(picid) + ".jpg");
+        $(".picshow").attr("src", "img/honor/" + String(picid) + ".jpg");
         console.log(picid);
     })
     $("#next").click(function () {
         picid = (picid + 1) % picnum;
-        $(".picshow").attr("src", "/img/honor/" + String(picid) + ".jpg");
+        $(".picshow").attr("src", "img/honor/" + String(picid) + ".jpg");
     })
     $(".picshow").click(function () {
         picid = (picid - 1 + 8) % picnum;
-        $(".picshow").attr("src", "/img/honor/" + String(picid) + ".jpg");
+        $(".picshow").attr("src", "img/honor/" + String(picid) + ".jpg");
     })
-    $(document).ready(function () {
-
         // Check for click events on the navbar burger icon
 
     });
