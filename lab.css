@@ -107,32 +107,91 @@ html.has-navbar-fixed-top {
     font-weight: bolder;
 }
 
-
-.hel{
-    font-size: 40px;
-    
-    margin-top: 100px;
-}
-
 #preload {
-    background-image: url("/img/honor/3.jpg");
     background-image: url("/img/honor/0.jpg");
     background-image: url("/img/honor/1.jpg");
     background-image: url("/img/honor/2.jpg");
-    
+    background-image: url("/img/honor/3.jpg");
     background-image: url("/img/honor/4.jpg");
     background-image: url("/img/honor/5.jpg");
     background-image: url("/img/honor/6.jpg");
     background-image: url("/img/honor/7.jpg");
 }
-.honor{
+
+.honor {
     font-family: KaiTi;
     text-align: center;
 }
-.leftright{
+
+.leftright {
     margin-left: 2px;
     margin-right: 2px;
 }
-.kaiti{
+
+.kaiti {
     font-family: KaiTi;
 }
+
+.news {
+    text-align: center;
+    color: red;
+    font-size: 48px;
+    font-family: "KaiTi";
+    
+}
+
+.news:hover {
+    font-size: 50px;
+    color:rgb(0, 170, 255);
+
+    font-family: "KaiTi";
+}
+.cssouter{
+     background-color: white;
+}
+.csscontent {
+    /* 让这个小块块出现 */
+    /* 宽高都为cover-10px */
+    height: 55px;
+    width: 97vw;
+    /* 内容居中 */
+    text-align: center;
+    line-height: 55px;
+    /* 与背景区分开 */
+    background-color: white;
+    color: white;
+    /* 这个圆角要比cover小一点点，这样比较好看 */
+    border-radius: 10px;
+}
+
+/* cover为边框部分 */
+
+.csscover {
+    /* 内容居中 */
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    justify-content: center;
+    /* 定义宽高 */
+    height: 60px;
+    /* 再来一点阴影 */
+    box-shadow: 0 0 10px 0 #000;
+    /* 再加一点点圆角 */
+    border-radius: 15px;
+
+    /* 是时候放出一点颜色了！ */
+    /* 第一个属性为渐变的角度，后三个为渐变的颜色，如图所示，我这样设置可以避免渐变的时候出现深绿色，
+                    大部分的人喜欢第三个属性为（255, 0, 242），但是这样渐变的时候就会出现很丑的深绿！ */
+    background: linear-gradient(135deg, rgb(255, 1, 35), rgb(255, 14, 22), rgb(255, 0, 179));
+
+    /* 添加动画，让颜色动起来 */
+    /*animation: color 3s linear infinite;
+
+    /* 加一点点鼠标移入的效果 */
+    transition: all 0.5s;
+}
+
+.csscover:hover {
+    box-shadow: 0 0 20px 0 #000;
+}
+
