@@ -4,11 +4,11 @@
 <head class="has-navbar-fixed-top">
     <meta charset="UTF-8">
     <title>密码实验室</title>
-    <link rel="stylesheet" href="/bulma.css" />
+    <link rel="stylesheet" href="bulma.css" />
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-    <link rel="stylesheet" href="/lab.css">
-    <script src="/lab.js"></script>
+    <link rel="stylesheet" href="lab.css">
+    <script src="lab.js"></script>
 
 </head>
 
@@ -20,7 +20,7 @@
                 <a class="navbar-item" href="index.html">
                     <img height="100px" style="max-height: 5.0rem" src="img/logo.png" />
                 </a>
-                <div class="labtitle">密码技术与工程实验室</div>
+                <div class="labtitle">国家保密实验室</div>
                 <div class="navbar-burger burger" aria-label="menu" aria-expanded="false"
                     data-target="navbarExampleTransparentExample">
                     <span></span>
@@ -60,7 +60,7 @@
                     <article class="columns is-desktop">
                         <div class="column is-6" style="width: 20%;">
                             <figure>
-                                <img src="./img/ylzhao_used.jpg" alt="professor" />
+                                <img src="img/ylzhao.jpg" alt="professor" />
                             </figure>
                         </div>
 
@@ -97,12 +97,6 @@
 
             </div>
             <br>
-            <p class="group-title">
-                实验室老师
-            </p>
-            <div class="group-teacher group">
-                <!--first student-->
-            </div>
 
             <p class="group-title">
                 博士生
@@ -110,7 +104,6 @@
             <div class="group-doctor group">
                 <!--first student-->
             </div>
-
             <p class="group-title group">
                 硕士生
             </p>
@@ -142,16 +135,8 @@
                     }
 
                 }
-                board = new Board(".group-teacher");
-                board.appendMember("方博越", "/img/member/doctor/SuiGuangye.png", "", "", "", "科研助理");
-                board.appendMember("陈彦伯", "/img/logo.png", "", "none", "", "科研助理");
-                board.appendMember("袁辕", "/img/logo.png", "", "none", "", "行政助理");
-                board.appendMember("王会歌", "/img/logo.png", "", "none", "", "博士后");
-
-
-
                 board = new Board(".group-doctor");
-                // board.appendMember("隋光烨", "/img/member/doctor/SuiGuangye.png", "", "", "", "密码学工程与应用，密码协议安全性分析");
+                board.appendMember("隋光烨", "/img/member/doctor/SuiGuangye.png", "", "", "", "密码学工程与应用，密码协议安全性分析");
                 board.appendMember("赵旭阳", "/img/logo.png", "", "none", "", "密码算法硬件高效实现");
                 board.appendMember("胡跃", "/img/logo.png", "", "none", "", "密码算法硬件高效实现");
                 board.appendMember("梁志闯", "/img/logo.png", "", "none", "", "网络空间安全");
@@ -183,7 +168,7 @@
                 board.appendMember("王威", "/img/logo.jpg", "", "none", "", "");
                 board.appendMember("王御天", "/img/logo.jpg", "", "none", "", "");
                 board.appendMember("李欣然", "/img/logo.jpg", "", "none", "", "");
-                // board.appendMember("方博越", "/img/logo.jpg", "", "none", "", "");
+                board.appendMember("方博越", "/img/logo.jpg", "", "none", "", "");
 
 
             </script>
